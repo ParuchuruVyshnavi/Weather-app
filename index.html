@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SPLASH SCREEN -->
+<div id="splash">
+  <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" class="logo">
+  <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" class="loader">
+  <p>Weather App</p>
+</div>
+
+<div class="app">
+
+  <!-- APP LOGO -->
+  <div class="header">
+    <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png">
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search-box">
+    <input id="city" placeholder="Search City">
+    <button onclick="getWeather()">🔍</button>
+  </div>
+
+  <button class="location-btn" onclick="getLocationWeather()">📍 Use My Location</button>
+
+  <!-- WEATHER CARD -->
+  <div class="card">
+    <h2 id="location">Search City</h2>
+    <p id="date"></p>
+
+    <img id="icon" class="icon">
+
+    <h1 id="temp">--°C</h1>
+    <p id="condition">---</p>
+
+    <div class="info">
+      <div>
+        💧 <span id="humidity">--</span>%
+        <p>Humidity</p>
+      </div>
+      <div>
+        💨 <span id="wind">--</span> km/h
+        <p>Wind</p>
+      </div>
+    </div>
+
+    <!-- FORECAST -->
+    <div class="forecast" id="forecast"></div>
+
+    <!-- GRAPH -->
+    <canvas id="weatherChart"></canvas>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.app {
+  width: 360px;
+}
+
+/* Splash */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: hsl(200, 4%, 41%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 999;
+}
+
+#splash .logo {
+  width: 80px;
+}
+
+#splash .loader {
+  width: 120px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header img {
+  width: 50px;
+}
+
+.search-box {
+  display: flex;
+  background: hwb(0 24% 75% / 0.933);
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.search-box button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: white;
+}
+
+.location-btn {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(209, 15, 122, 0.842);
+  color: white;
+}
+
+.card {
+  background: #260fa8c4;
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.icon {
+  width: 120px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.forecast div {
+  background: #0dd12ee0;
+  border-radius: 15px;
+  padding: 8px;
+  width: 70px;
+}
+
+canvas {
+  margin-top: 20px;
+  width: 100% !important;
+  max-height: 200px;
+}
